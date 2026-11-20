@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZYFLIX — The Origins of ZYFLIXV1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="home" class="hero-section">
+    <!-- Background Image & Atmospheric Obsidian-Monochrome Gradients -->
+    <div class="hero-backdrop" aria-hidden="true">
+      <img
+        src="assets/origins-bg.jpg"
+        alt="The Origins of ZYFLIXV1 Background"
+        class="hero-bg-img"
+      />
+      <div class="hero-gradient-left"></div>
+      <div class="hero-gradient-bottom"></div>
+      <div class="hero-smoke-glow"></div>
+    </div>
+
+    <div class="hero-container">
+      <!-- Top Bar: ZYFLIX Logo + Soundtrack ON/OFF Toggle ("K." by Cigarettes After Sex) -->
+      <div class="hero-top-header">
+        <div class="brand-bar">
+          <a href="#home" class="zyflix-brand-lockup" aria-label="ZYFLIX Home">
+            <span class="zyflix-n-mark" aria-hidden="true">Z</span>
+            <span class="zyflix-wordmark">ZYFLIX</span>
+          </a>
+
+          <div class="soundtrack-player-dock" role="region" aria-label="Site Soundtrack Player">
+            <button
+              type="button"
+              id="soundtrackToggle"
+              class="soundtrack-toggle"
+              aria-pressed="false"
+              aria-label="Toggle K. by Cigarettes After Sex On or Off"
+            >
+              <span class="eq-bars" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </span>
+              <span class="track-info" id="trackInfoBox">
+                <span class="track-title" id="trackTitle">K.</span>
+                <span class="track-artist" id="trackArtist">CIGARETTES AFTER SEX</span>
+              </span>
+              <span class="toggle-pill" aria-hidden="true">
+                <span class="toggle-knob"></span>
+                <span class="toggle-text" id="musicToggleText">OFF</span>
+              </span>
+            </button>
+          </div>
+
+          <!-- Dual Audio Elements for Smooth Fade-In, Fade-Out & Seamless Crossfade Looping -->
+          <audio id="bgMusicA" preload="auto" src="assets/k-cigarettes-after-sex.mp3"></audio>
+          <audio id="bgMusicB" preload="auto"></audio>
+        </div>
+      </div>
+
+      <!-- Main Hero Content -->
+      <div class="hero-content">
+        <div class="title-row">
+          <h1 class="main-title">THE ORIGINS OF ZYFLIXV1</h1>
+          <button
+            type="button"
+            id="playTriggerBtn"
+            class="play-trigger"
+            title="Play or Pause Soundtrack"
+            aria-label="Play or Pause Soundtrack"
+          >
+            <span class="play-triangle"></span>
+          </button>
+        </div>
+
+        <div class="title-dots" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+
+        <!-- Exact Metadata Badges Matching Reference Layout -->
+        <div class="meta-row">
+          <span class="meta-rate">100% Rate</span>
+          <span class="meta-year">2008</span>
+          <span class="meta-badge">TV-MA</span>
+          <span class="meta-seasons">17 Seasons</span>
+          <span class="meta-badge">HD</span>
+          <span class="meta-badge">5.5</span>
+        </div>
+
+        <!-- Sub-Headline -->
+        <h2 class="sub-headline">Season 18 Coming Next Month</h2>
+
+        <!-- New Interactive Demo & Dark Mode Synopsis -->
+        <p class="welcome-copy">
+          THIS PAGE IS ONLY THE DEMO VERSION OF AN INTERACTIVE EXPERIENCE BUILT TO BE EXPLORED&mdash;FEATURING SMOOTH MOTION, CLICKABLE SHOWCASE CARDS, AND A LIVE SOUNDTRACK. SWITCH INTO DARK MODE TO UNLOCK A COMPLETELY DIFFERENT VIBE AND REVEAL EVEN MORE INFORMATION ABOUT ME, FROM MY FAVORITE CELEBRITIES AND SERIES TO THE PEOPLE WHO MOTIVATE ME.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <script src="script.js"></script>
+</body>
+</html>
